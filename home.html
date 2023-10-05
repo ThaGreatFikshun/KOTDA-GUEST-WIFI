@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>KOTDA Guest Wi-Fi Captive Portal</title>
+  <!-- External css linking  -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="loginBox"> <img class="user" src="assets/images/logo1.png" height="100px" width="100px">
+        <h3>I agree to continue with the service</h3>
+        <form action="#" method="post">
+            <div class="inputBox"> 
+                <input id="phone" type="Phone" name="Phone" placeholder="Enter Confirmation Code"> &nbsp;<p id="demo"></p>
+            </div> 
+        <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Oct 5, 2023 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+            
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+            
+        // Time calculations for days, hours, minutes and seconds
+        // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        // var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 2)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60 * 2)) / 1000 * 60);
+            
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s ";
+            
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+        </script>
+            
+            <input type="submit" name="" value="Confirm">
+        </form> 
+        
+    </div>
+</body>
+</html>
