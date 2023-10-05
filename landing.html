@@ -5,9 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <title>KOTDA Guest Wi-Fi Captive Portal</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- External css linking  -->
+
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- internal css for the radio button  -->
+    <style> 
+        #inlineRadio1 { 
+            accent-color: #E2251D; 
+        } 
+    </style>
+    <div class="loginBox1"> <img class="user" src="assets/images/logo1.png" height="100px" width="100px">
+        <h3>WELCOME TO KONZA TECHNOPOLIS <br> GUEST WI-FI</h3>
+        <form action="../KOTDA-GUEST-WIFI.io/index.html" method="post">
+            <div class="inputBox"> 
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" checked="checked" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1"> I agree</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">I disagree</label>
+                  </div>
+                  <h6>to the Terms of Use for Wi-Fi Service </h6><br>
+                    <h6>Your personal data will be processed in <br>
+                        accordance with our <a href="">Privacy Notice.</a> We <br>
+                        use cookies to improve vour experience <br>
+                        as detailed in our <a href="">Cookie Policy.</a></h6>
+            </div> 
+            <a href="index.html"><input type="submit" name="submit"  data-toggle="modal" data-target="#form" value="Continue"></a>
+        </form> 
+    </div>
 
 </body>
 </html>
