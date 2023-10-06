@@ -1,40 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <title>KOTDA Guest Wi-Fi Captive Portal</title>
 
-
+  <!-- Include Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <!-- External css linking  -->
-
-  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Include your custom CSS file -->
+  <link rel="stylesheet" href="assets/css/custom.css">
 </head>
-<body>
-    <!-- internal css for the radio button  -->
-    <div class="loginBox1"> <img class="user" src="assets/images/logo1.png" height="150px" width="200px">
-        <h3>WELCOME TO KONZA TECHNOPOLIS <br> GUEST WI-FI</h3>
-        <form action="landing.html" method="post">
-            <div class="inputBox"> 
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" checked="checked" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                    <label class="form-check-label" for="inlineRadio1"> I agree</label>
+<body class="container-bg">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 mx-auto"> <!-- Center the column -->
+        <div class="container mt-5 d-flex justify-content-center align-items-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8"> <!-- Use col-lg for larger screens -->
+                <div class="card">
+                  <div class="card-body text-center">
+                    <img class="img-fluid" src="assets/images/logo1.png" alt="Logo" width="250px">
+                    <h2 class="display-4">Welcome to Konza Technopolis <br>guest Wi-Fi</h2>
                   </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                    <label class="form-check-label" for="inlineRadio2">I disagree</label>
-                  </div>
-                  <h6>to the Terms of Use for Wi-Fi Service </h6><br>
-                    <h6>Your personal data will be processed in <br>
-                        accordance with our <a href="">Privacy Notice.</a> We <br>
-                        use cookies to improve vour experience <br>
-                        as detailed in our <a href="">Cookie Policy.</a></h6>
-            </div> 
-            <a href="landing.html"><input type="submit" name="submit"  data-toggle="modal" data-target="#form" value="Continue"></a>
-        </form> 
-    </div>
+                  <form action="landing.html" method="post">
+                    <div class="card-body">
+                      <div class="card-body text-center">
+                      <div class="form-check form-check-inline mb-3">
+                        <input class="form-check-input" type="radio" checked="checked" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"> I agree</label>
+                      </div>
+                      <div class="form-check form-check-inline mb-3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">I disagree</label>
+                      </div>
+                    </div>
+                      <h6 class="mb-3 text-center">to the <a href="#">Terms of Use</a> for Wi-Fi Service</h6>
+                      <h6 class="mb-3 text-center">Your personal data will be processed in accordance with our <a href="#">Privacy Notice.</a> We use cookies to improve your experience as detailed in our <a href="#">Cookie Policy.</a></h6>
+                    </div>
+                    <div class="text-center">
 
+                      <!-- Button to navigate landing page-->
+                      <a href="landing.html" class="btn btn-primary custom-bg-color">Continue</a>
+                    </div><br>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>          
+      </div>
+    </div>
+  </div>  
+  <!-- Include Bootstrap 5 JavaScript and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-Ff538Y6me1Xlyj5qCqge5NdOe5zwlOd0JolpLkq+8+Z5U5Bs5FQ5c8iiOf2FpAFVl" crossorigin="anonymous"></script>
 </body>
 </html>

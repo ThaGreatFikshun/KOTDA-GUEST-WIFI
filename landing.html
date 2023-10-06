@@ -1,25 +1,45 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <title>KOTDA Guest Wi-Fi Captive Portal</title>
-  <!-- External css linking  -->
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
 
-<body>
-    <div class="loginBox"> <img class="user" src="assets/images/logo1.png" height="150px" width="250px">
-        <h2>WELCOME TO KONZA TECHNOPOLIS <br>GUEST WI-FI</h2>
-        <form action="products.html" method="post">
-            <div class="inputBox"> 
-                <input id="Email" type="text" name="Email" placeholder="Enter Your Email" value="test@konza.go.ke"> 
-                <input id="phone" type="Phone" name="Phone" placeholder="Enter Phone Number" value="0700xxxxxx"> 
-            </div> 
-            <a href="products.html"><input type="submit" name="submit"  data-toggle="modal" data-target="#form" value="Continue"></a>
-        </form> 
+  <!-- Include Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Include your custom CSS file -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="container-bg">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 mx-auto"> <!-- Center the column -->
+        <div class="container mt-5 d-flex justify-content-center align-items-center">
+            <div class="card">
+              <div class="card-body text-center">
+                <img class="img-fluid" src="assets/images/logo1.png" alt="Logo" width="250px">
+                <h2 class="display-4">Welcome to Konza Technopolis <br>guest Wi-Fi</h2>
+                <form action="products.html" method="post">
+                  <div class="form-group mb-3"> <!-- Added mb-3 class for margin-bottom -->
+                    <input id="Email" type="text" class="form-control" name="Email" placeholder="Enter Your Email" value="test@konza.go.ke">
+                  </div>
+                  <div class="form-group mb-3">
+                    <input id="phone" type="tel" class="form-control form-control-sm" name="Phone" placeholder="Enter Phone Number" value="0700xxxxxx">
+                  </div>
+
+                  <div class="text-center">
+
+                    <!-- Button to navigate products page and timer count down-->
+                    <a href="products.html" class="btn btn-primary custom-bg-color">Continue</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
     </div>
+  </div>
+  <!-- Include Bootstrap 5 JavaScript and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-Ff538Y6me1Xlyj5qCqge5NdOe5zwlOd0JolpLkq+8+Z5U5Bs5FQ5c8iiOf2FpAFVl" crossorigin="anonymous"></script>
 </body>
 </html>

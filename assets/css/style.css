@@ -119,12 +119,14 @@ p{
 
 
 /* Products Carousel page  */
-.loginBox2{position: absolute;
+.loginBox2{position: fixed;
   top: 40%;
   left: 50%;
+  bottom: auto;
   text-align: center;
   transform: translate(-50%,-50%);
-  width: 500px;min-height: 500px;
+  width: 350px;
+  min-height: 200px;
   background: #FFFFFF;
   border-radius: 10px;
   padding: 20px;box-sizing: border-box
