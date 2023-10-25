@@ -22,6 +22,17 @@
 .custom-bg-color {
     background-color: #007A37;
   }
+
+  /* dropdown custom css for Select options  */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    color: #E2251D;
+    background-color: #007A37;
+  }
+
+  .dropdown .dropdown-menu {
+    display: none;
+  }
   /* .custom-bg-color:hover {
     background-color: #E2251D;
   }   */
@@ -31,40 +42,80 @@
     font-weight: bold;
   }
 
+  /* custom css for the timer section  */
+  .timer-value {
+    font-size: 48px;
+    font-weight: bold;
+}
   /* Custom CSS for the carousel */
-.h1 {
+
+
+.swiper1{
+  width: 100%;
+  max-width: 550px;
+  height: 360px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.swiper1 .swiper-wrapper{
+  min-width: 100% !important;
+}
+.swiper-wrapper .slide{
+  max-width: 330px !important;
+  flex-direction: column;
   text-align: center;
+  padding: 0 .75rem;
 }
-.carousel-caption {
-  background-color: #007A37; /* Add a semi-transparent background */
-  color: #111820; /* Text color for captions */
-  padding: 10px; /* Padding for captions */
+.slide img{
+  display: block;
+  width: 140px;
+  margin: 0 auto;
 }
-
-.carousel-caption h3 {
-  font-size: 24px; /* Font size for heading */
+.slide q{
+  display: block;
+  color: var(--dark-black);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  margin: 2rem 0;
 }
-
-.carousel-caption p {
-  font-size: 16px; /* Font size for description */
+.slide__profile img{
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
 }
-
-/* Style the active slide differently */
-.carousel-inner .carousel-item.active {
-  background-color: #ffffff; /* Background color for active slide */
-  color: #111820; /* Text color for active slide */
+.slide__profile h4{
+  color: var(--dark-black);
+  font-weight: 500;
+  margin-top: .5rem;
 }
-/* Custom CSS for carousel controls */
-.carousel-control-prev, .carousel-control-next {
-  opacity: 0.8; /* Adjust opacity as needed */
+.slide__profile span{
+  display: block;
+  color: var(--light-black);
+  font-size: 0.813rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
 }
-
-/* Custom CSS for control icons (optional) */
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  background-color: #007A37; /* Set icon background color */
+.swiper-pagination-bullet{
+  bottom: 0 !important;
+  width: 14px !important;
+  height: 6px !important;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  -ms-border-radius: 5px !important;
+  -o-border-radius: 5px !important;
+  border-radius: 5px !important;
+  -webkit-transition: all .3s linear !important;
+  -moz-transition: all .3s linear !important;
+  -ms-transition: all .3s linear !important;
+  -o-transition: all .3s linear !important;
+  transition: all .3s linear !important;
 }
-
-/* Custom CSS for control arrows (optional) */
-.carousel-control-prev-icon::before, .carousel-control-next-icon::before {
-  color: #111820; /* Set icon color */
+.swiper-pagination-bullet-active{
+  width: 24px !important;
+  background: var(--cta) !important;
 }
